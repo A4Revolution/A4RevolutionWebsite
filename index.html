@@ -32,52 +32,53 @@
     <!-- Navbar -->
     <div class="navbar">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#missingPeople">Missing People</a></li>
-        <li><a href="#shareYourArtwork">Share Artworks</a></li>
-        <li><a href="#news">News</a></li>
+        <li><a href="#" data-section="home">Home</a></li>
+        <li><a href="#about" data-section="about">About</a></li>
+        <li><a href="#timeline" data-section="timeline">Timeline</a></li>
+        <li><a href="#missingPeople" data-section="missingPeople">Missing People</a></li>
+        <li><a href="#shareYourArtwork" data-section="shareYourArtwork">Share Artworks</a></li>
+        <li><a href="#news" data-section="news">News</a></li>
         <li><button id="theme-button">Dark Mode</button></li>
         <li><button id="reduce-motion" class="reduce-motion-button">Reduce Motion</button></li>
       </ul>
     </div>
 
-    <!-- Flexbox Layout -->
+    <!-- Flexbox Layout
     <div class="container">
       <div class="item"></div>
       <div class="item"></div>
       <div class="item"></div>
-    </div>
+    </div> -->
 
     <!-- About A4 Revolution -->
-    <h2 id="about">About A4 Revolution</h2>
-    <iframe width="504.9" height="284" src="https://www.youtube.com/embed/H38AiIWUHp0" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+    <div class="revealable" data-section="about">
+      <h2 id="about">About A4 Revolution</h2>
+      <iframe width="504.9" height="284" src="https://www.youtube.com/embed/H38AiIWUHp0" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
 
-    <p> "A4 Revolution" is a censored topic in China right now. Because of the extremely strict zero-COVID policy,
-      people lived in misery (such as starving, being forced into isolation, or even losing their lives). </p>
-    <p>An apartment building fire occurred on November 24, 2022, in Ürümqi, Xinjiang, China. Ten individuals were killed
-      and nine others were injured because the building's exits were closed in accordance with stringent COVID
-      standards. Protests are sparked by this blaze in numerous major Chinese cities and among Chinese students and
-      expatriates around the world.</p>
-    <p> Countless Chinese young people are holding an A4-size white paper and protesting in the street. However, quite a
-      number of them got arrested and have not been released yet. </p>
-    <p> After changing the COVID regulation policy and opening the country, the CCP (Chinese Communist Party) tries to
-      cover up the history just like they did in 1989 at Tiananmen Square. However, I believe every citizen has the
-      right to know about the whole story, so a comprehensive website about it would be helpful.
-    </p>
+      <p> "A4 Revolution" is a censored topic in China right now. Because of the extremely strict zero-COVID policy,
+        people lived in misery (such as starving, being forced into isolation, or even losing their lives). </p>
+      <p>An apartment building fire occurred on November 24, 2022, in Ürümqi, Xinjiang, China. Ten individuals were killed
+        and nine others were injured because the building's exits were closed in accordance with stringent COVID
+        standards. Protests are sparked by this blaze in numerous major Chinese cities and among Chinese students and
+        expatriates around the world.</p>
+      <p> Countless Chinese young people are holding an A4-size white paper and protesting in the street. However, quite a
+        number of them got arrested and have not been released yet. </p>
+      <p> After changing the COVID regulation policy and opening the country, the CCP (Chinese Communist Party) tries to
+        cover up the history just like they did in 1989 at Tiananmen Square. However, I believe every citizen has the
+        right to know about the whole story, so a comprehensive website about it would be helpful.
+      </p>
 
-    <img src="images/WhitePaper.png" alt="WhitePaper" width="504.9" height="357" />
-    <p class="image-description">Young Chinese are holding up white papers in the streets to demand freedom.</p>
+      <img src="images/WhitePaper.png" alt="WhitePaper" width="504.9" height="357" />
+      <p class="image-description">Young Chinese are holding up white papers in the streets to demand freedom.</p>
 
-    <img src="images/Urumqi-UCSB.jpg" alt="WhitePaper" width="504.9" height="357" />
-    <p class="image-description">Chinese student community in University of California, Santa Barbara came together to
-      mourn the loss of their countrymen in the Urumqi fire.</p>
-
+      <img src="images/Urumqi-UCSB.jpg" alt="WhitePaper" width="504.9" height="357" />
+      <p class="image-description">Chinese student community in University of California, Santa Barbara came together to
+        mourn the loss of their countrymen in the Urumqi fire.</p>
+    </div>
     <!-- Timeline   -->
-    <div class="revealable">
+    <div class="revealable" data-section="timeline">
       <div class="timeline-container">
         <div class="timeline">
           <h2 id="timeline">Timeline</h2>
@@ -141,7 +142,7 @@
     </div>
 
     <!-- Missing People   -->
-    <div class="revealable">
+    <div class="revealable" data-section="missingPeople">
       <div class="missing-people">
         <h2 id="missingPeople">Missing People</h2>
         <p>Many young people in China have been arrested for participating in the A4 Revolution. The Chinese government
@@ -238,7 +239,7 @@
     </div>
 
     <!-- Share Your Artwork -->
-    <div class="revealable">
+    <div class="revealable" data-section="shareYourArtwork">
       <section id="shareYourArtwork" class="share-artwork">
         <h2>Share Your Artwork</h2>
         <div class="artworks-grid">
@@ -255,11 +256,28 @@
             <p>Photo by B70</p>
           </div>
           <div class="artwork">
+            <img src="images/AnaKin-2.png" alt="Artwork description">
+            <p>"無恥逼出無畏的人"  by Ana Kin</p>
+          </div>
+          <div class="artwork">
+            <img src="images/Jaz-1.png" alt="Artwork description">
+            <p>"Dec 2022, New York" by Jaz</p>
+          </div>
+          <div class="artwork">
+            <img src="images/Jas-2.png" alt="Artwork description">
+            <p>Photo by Jaz</p>
+          </div>
+          <div class="artwork">
             <video controls>
               <source src="images/RoosterStatement-JIALUNTONG.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
             <p>Rooster Statement by JIALUN TONG</p>
+            <p>Artist's words: </p>
+            <p>For over a billion people, our first introduction to the map of our home country was also a vivid analogy - a rooster. A symbol deep-seated in our minds that conjure polarizing feelings of recognition and belonging today. Paper, one of the Four Great Inventions of China, occurred in Western Han Dynasty - one would imagine to be used to further one’s expression, and pass down legacies longer and larger than life.</p>
+            <p>Could our ancestors see how blank sheets of paper are being used today?</p>
+            <p>As words unsaid echo around the world, the explicit loudness of blank paper reminds us of the fire that ignited this movement, and the fireball that cannot be censored from darkness.</p>              
+            <p>A Chinese proverb reads, “Paper cannot keep the fire wrapped”. No one can stop the dawn from breaking, even with all the roosters muffled. No one can stop the birth of a new day. </p>
           </div>
           <!-- Add more artworks here -->
         </div>
@@ -275,7 +293,7 @@
 
 
     <!-- News Section -->
-    <div class="revealable">
+    <div class="revealable" data-section="news">
       <div class="news-section">
         <h2 id="news">News & Resources</h2>
         <div class="article">

@@ -179,3 +179,20 @@ function closeThanksModal(event) {
   closeModal();
 }
 
+document.querySelectorAll('.navbar a').forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const sectionToShow = this.getAttribute('data-section');
+
+    document.querySelectorAll('.revealable').forEach(section => {
+      if (sectionToShow === 'home') {
+        section.style.display = 'block';
+      } else if (section.getAttribute('data-section') === sectionToShow) {
+        section.style.display = 'block';
+      } else {
+        section.style.display = 'none';
+      }
+    });
+  });
+});
